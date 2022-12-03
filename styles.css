@@ -1,0 +1,252 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+ margin: 0;
+ padding: 0;
+ border: 0;
+ font-size: 100%;
+ font: inherit;
+ vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+ display: block;
+}
+
+body {
+ line-height: 1;
+}
+
+ol,
+ul {
+ list-style: none;
+}
+
+blockquote,
+q {
+ quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+ content: '';
+ content: none;
+}
+
+table {
+ border-collapse: collapse;
+ border-spacing: 0;
+}
+
+/* global styles being here */
+:root{
+   --apple: #D74452;
+   --teal: #2D838D;
+   --beige: #DAD3B7;
+   --orange: #DB9F34;
+   --dark-orange: #DB8E36;
+   --white: #fff;
+   --black: #000;
+}
+
+body{
+   font-family: 'Comfortaa', sans-serif;
+   font-size: 16px;
+   font-weight: 300;
+   background-color: var(--beige);
+   color: var(--black);
+   line-height: 1.5rem;
+   max-width: 80ch;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-family: 'Comfortaa', sans-serif;
+   font-size: 16px;
+   font-weight: 700;
+   line-height: 1.5rem;
+}
+img {
+   max-width: 80ch;
+}
+
+#skip a {
+   position: absolute;
+   left: -10000px;
+   top: auto;
+   width: 1px;
+   height: 1px;
+   overflow: hidden;
+}
+   
+#skip a:focus {
+   left: 50%;
+   transform: translateX(-50%);
+   opacity: 1;
+}
+
+.sr-only{
+   position: absolute;
+   left: -10000px;
+   top: auto;
+   width: 1px;
+   height: 1px;
+   overflow: hidden;
+}
+/* global styles end here */
+
+/* desktop styles start here */
+
+
+
+/* desktop styles end here */
+
+/* tablet styles starts here */
+
+
+
+/* tablet styles end here */
+
+
+/* mobile styles start here */
+@media (min-width: 320px) and (max-width: 480px){
+   body{
+      width: 80%;
+      margin: 0 auto;
+   }
+
+   nav:nth-of-type(1){
+      display: grid;
+      grid-template-columns: 10% 90%;
+      grid-template-rows: repeat(5, 1fr);
+   }
+
+   nav:nth-of-type(2){
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 1fr;
+   }
+
+      #about,
+      #books,
+      .works,
+      #events,
+      .events-info,
+      #newsletter,
+      form,
+      #copyright,
+      .footer-list,
+      #privacy-policy {
+         display: grid;
+         grid-template-columns: 1fr;
+         grid-auto-rows: auto;
+      }
+   
+   #copyright{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: auto;
+   }
+
+}
+/* mobile styles end here */
